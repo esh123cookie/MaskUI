@@ -76,19 +76,14 @@ class Main extends PluginBase implements Listener {
 					    break;
             }
         });
-        $form->setTitle("§l§eMask §fMenu");
+        $form->setTitle("§l§dMask Menu");
         $form->setContent("§7Please Select Your Favorite §eMask \n§7Note: Clear your §l§carmor§r before choosing a §eMask");
         $form->addButton("§l§cExit", 0);
-        $form->addButton("§fSkeleton", 1);
-	$form->setContent("§aActivated");
-        $form->addButton("§0Wither Skeleton", 2);
-	$form->setContent("§aActivated");
-        $form->addButton("§2Zombie", 3);
-	$form->setContent("§aActivated");
-        $form->addButton("§aCreeper", 4);
-	$form->setContent("§aActivated");
-        $form->addButton("§4Dragon", 5);
-	$form->setContent("§aActivated");
+        $form->addButton("§fSkeleton\n §l§aActivated", 1);
+        $form->addButton("§0Wither Skeleton\n §l§aActivated", 2);
+        $form->addButton("§2Zombie\n §l§aActivated", 3);
+        $form->addButton("§aCreeper\n §l§aActivated", 4);
+        $form->addButton("§4Dragon\n §l§aActivated", 5);
         $form->sendToPlayer($sender);
         }
         return true;
